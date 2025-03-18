@@ -29,12 +29,12 @@ DB_NAME = os.environ.get("DATABASE_NAME", "PrimeRp")
 
 #force sub channel id, if you want enable force sub
 FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001991806323"))
-JOIN_REQUEST_ENABLE = os.environ.get("JOIN_REQUEST_ENABLED", None)
+JOIN_REQUEST_ENABLE = os.environ.get("JOIN_REQUEST_ENABLED", True)
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_PIC = os.environ.get("START_PIC","")
+START_PIC = os.environ.get("START_PIC","https://graph.org/file/f68485a91495405874fbf-e850a37999c8e3aee0.jpg")
 START_MSG = os.environ.get("START_MESSAGE", "Ram Ram Bhagat 🙏 {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
